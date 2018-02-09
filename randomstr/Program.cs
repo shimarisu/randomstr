@@ -7,7 +7,7 @@ namespace day1
     {
         static void Main(string[] args)
         {
-            String chars = "ABCDEFGHIJKLIMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/!$%&'()=~|@`[]{}*+<>?_;:,.\\";
+            String chars = "ABCDEFGHIJKLIMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-/!$%&'()=~|@`[]{}*+<>?_;:,.\\";
             char[] charArray = chars.ToCharArray();
             String randomStr = "";
             int size = 32;
