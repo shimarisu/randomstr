@@ -1,6 +1,7 @@
 ﻿using System;
+using randomstr;
 
-namespace randomstr
+namespace day1
 {
     class Program
     {
@@ -9,9 +10,8 @@ namespace randomstr
             String chars = "ABCDEFGHIJKLIMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/!$%&'()=~|@`[]{}*+<>?_;:,.\\";
             char[] charArray = chars.ToCharArray();
             String randomStr = "";
-            int size = 10;
+            int size = 32;
             Random cRondom = new System.Random();
-//            int i;
             for (int i = 0; i < size; i++)
             {
                 int len = chars.Length;
@@ -19,6 +19,12 @@ namespace randomstr
                 randomStr = randomStr + charArray[rndNum];
             }
             Console.WriteLine(randomStr);
+
+            int sizetype = sizeof(Char);
+            Console.WriteLine(sizetype);
+            Console.WriteLine("Size of Char: {0}",sizetype);
+            Crow c1 = new Crow();
+            c1.Sing();
         }
     }
 }
